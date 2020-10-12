@@ -1,5 +1,5 @@
 const Vue = require('vue')
-const renderer = require('vue-server-renderder').createRenderer()
+// const renderer = require('vue-server-renderer').createRenderer()
 
 module.exports = function createVue(ctx,context) { 
     return new Vue({
