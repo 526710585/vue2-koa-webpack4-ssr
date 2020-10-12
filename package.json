@@ -1,0 +1,27 @@
+{
+  "name": "vue2-koa-webpack4-ssr",
+  "version": "1.0.0",
+  "description": "222",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon --watch src -e html js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/526710585/vue2-koa-webpack4-ssr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/526710585/vue2-koa-webpack4-ssr/issues"
+  },
+  "homepage": "https://github.com/526710585/vue2-koa-webpack4-ssr#readme",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "vue": "^2.6.12",
+    "vue-server-renderer": "^2.6.12"
+  },
+  "devDependencies": {}
+}
