@@ -3,7 +3,7 @@ const Router = require('koa-router')
 const fs = require('fs')
 const path = require('path')
 const renderer = require('vue-server-renderer').createRenderer({
-    template: fs.readFileSync(path.join(__dirname,'./public/index.template.html'), 'utf-8')
+    template: fs.readFileSync(path.join(__dirname,'./src/public/index.template.html'), 'utf-8')
 })
 
 //1.
@@ -17,7 +17,7 @@ server.use(async (ctx,next)=>{
         title: 'hello',
         mate: `<meta http-equiv="content-type" content="text/html;charset=utf-8">`,
     }
-    const app  = require('./app')(ctx,context)
+    const app  = require('./src/app')(ctx,context)
     console.log('urllllllllll',ctx.url);
     try{
         const html = await renderer.renderToString(app,context)
